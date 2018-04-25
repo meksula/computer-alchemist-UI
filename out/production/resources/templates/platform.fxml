@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="canvas" prefHeight="500.0" prefWidth="900.0" styleClass="welcome" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.consoleUI.controller.PlatformController">
+    <children>
+        <Label layoutY="478.0" prefHeight="16.0" prefWidth="219.0" styleClass="txt" text="Created by Karol Meksuła 2018" />
+      <MenuBar layoutX="-3.0" prefHeight="29.0" prefWidth="320.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="GET">
+            <items>
+              <MenuItem fx:id="getComponentButton" mnemonicParsing="false" onAction="#showOneComponentGet" text="Get computer component" />
+                  <MenuItem mnemonicParsing="false" text="Get computer set" />
+                  <MenuItem mnemonicParsing="false" text="Get list of components" />
+                  <MenuItem mnemonicParsing="false" text="Get list of sets" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="POST">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Post computer component" />
+                  <MenuItem mnemonicParsing="false" text="Post computer set" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="DELETE">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete component" />
+                  <MenuItem mnemonicParsing="false" text="Delete set" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="HELP" />
+        </menus>
+      </MenuBar>
+      <Separator layoutX="313.0" layoutY="29.0" orientation="VERTICAL" prefHeight="478.0" prefWidth="6.0" />
+      <Pane fx:id="presenter" layoutX="319.0" layoutY="5.0" prefHeight="499.0" prefWidth="574.0" />
+      <Pane fx:id="oneComponentGet" layoutX="6.0" layoutY="39.0" prefHeight="432.0" prefWidth="313.0">
+         <children>
+            <Button fx:id="execute" layoutX="14.0" layoutY="216.0" mnemonicParsing="false" onAction="#executeRequest" prefHeight="26.0" prefWidth="147.0" text="Execute request" />
+            <Label layoutY="174.0" prefHeight="21.0" prefWidth="114.0" text="Product id: " textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutY="144.0" prefHeight="21.0" prefWidth="114.0" text="Choosen type:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="typeLabel" layoutX="125.0" layoutY="144.0" prefHeight="21.0" prefWidth="114.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="productIdLabel" layoutX="125.0" layoutY="174.0" prefHeight="21.0" prefWidth="114.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <MenuButton layoutX="9.0" layoutY="21.0" mnemonicParsing="false" text="Component Type">
+              <items>
+                <MenuItem fx:id="motherboard" mnemonicParsing="false" onAction="#chooseComponent" text="Motherboard" />
+                <MenuItem fx:id="cpu" mnemonicParsing="false" onAction="#chooseComponent" text="Cpu" />
+                  <MenuItem fx:id="ram" mnemonicParsing="false" onAction="#chooseComponent" text="Ram" />
+                  <MenuItem fx:id="disk" mnemonicParsing="false" onAction="#chooseComponent" text="Disk" />
+                  <MenuItem fx:id="supply" mnemonicParsing="false" onAction="#chooseComponent" text="Power supply" />
+                  <MenuItem fx:id="compCase" mnemonicParsing="false" onAction="#chooseComponent" text="Case" />
+                  <MenuItem fx:id="graphicsCard" mnemonicParsing="false" onAction="#chooseComponent" text="Graphics Card" />
+              </items>
+            </MenuButton>
+            <Label layoutX="9.0" layoutY="65.0" prefHeight="21.0" prefWidth="86.0" text="Product id:" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productIdField" layoutX="10.0" layoutY="86.0" prefHeight="26.0" prefWidth="79.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

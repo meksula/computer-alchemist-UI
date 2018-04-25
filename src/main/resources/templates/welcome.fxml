@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" styleClass="welcome" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.consoleUI.controller.WelcomeController">
+   <children>
+      <Label layoutX="177.0" layoutY="25.0" styleClass="txt" text="Welcome to Computer Alchemist UI">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="414.0" fitWidth="336.0" layoutX="22.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../others/computer-alchemist.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameField" layoutX="542.0" layoutY="237.0" prefHeight="26.0" prefWidth="219.0" />
+      <PasswordField fx:id="passwordField" layoutX="542.0" layoutY="314.0" prefHeight="26.0" prefWidth="219.0" />
+      <Label layoutX="542.0" layoutY="221.0" prefHeight="16.0" prefWidth="82.0" styleClass="txt" text="Username" />
+      <Label layoutX="542.0" layoutY="298.0" prefHeight="16.0" prefWidth="82.0" styleClass="txt" text="Password" />
+      <Button fx:id="loginButton" layoutX="621.0" layoutY="358.0" mnemonicParsing="false" onAction="#login" text="login" />
+      <Label layoutX="199.0" layoutY="478.0" prefHeight="16.0" prefWidth="219.0" styleClass="txt" text="Created by Karol Meksuła 2018" />
+      <Label fx:id="registerButton" layoutX="578.0" layoutY="416.0" onMouseClicked="#goRegisterScreen" prefHeight="16.0" prefWidth="136.0" styleClass="txt" text="Create account now!" />
+   </children>
+</AnchorPane>
