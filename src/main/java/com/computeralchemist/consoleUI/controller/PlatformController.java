@@ -1,20 +1,12 @@
 package com.computeralchemist.consoleUI.controller;
 
-import com.computeralchemist.consoleUI.alerts.NullAlert;
-import com.computeralchemist.consoleUI.api.UriCreator;
-import com.computeralchemist.consoleUI.api.UriExecutor;
+import com.computeralchemist.consoleUI.gui.ui.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
 
 /**
  * @Author
@@ -22,94 +14,52 @@ import java.util.ResourceBundle;
  * 24-04-2018
  * */
 
-public class PlatformController implements Initializable {
+public class PlatformController {
 
     @FXML
-    private AnchorPane canvas;
+    public Pane presenter;
 
     @FXML
-    private MenuItem getComponentButton;
+    public Pane controllPane;
 
     @FXML
-    private Pane presenter;
+    private MenuItem getComponentButton, getComponentListButton, getSetButton, getSetListButton;
+
+    private UIManager uiManager;
 
     @FXML
-    private Pane oneComponentGet;
+    void showUserPanel(ActionEvent event) throws IOException {
+        controllPane.setVisible(true);
+        clearPane(controllPane);
 
-    @FXML
-    private Button execute;
+        if (event.getSource() == getComponentButton) {
+            clearPane(controllPane);
+            uiManager = new ComponentUI();
+            uiManager.arrangePane(controllPane);
+        }
 
-    @FXML
-    private Label typeLabel;
+        else if (event.getSource() == getComponentListButton) {
+            clearPane(controllPane);
+            uiManager = new ListOfComponentsUI();
+            uiManager.arrangePane(controllPane);
+        }
 
-    @FXML
-    private Label productIdLabel;
+        else if (event.getSource() == getSetButton) {
+            clearPane(controllPane);
+            uiManager = new SetUI();
+            uiManager.arrangePane(controllPane);
+        }
 
-    @FXML
-    private MenuItem motherboard;
+        else if (event.getSource() == getSetListButton) {
+            clearPane(controllPane);
+            uiManager = new ListOfSetsUI();
+            uiManager.arrangePane(controllPane);
+        }
 
-    @FXML
-    private MenuItem cpu;
-
-    @FXML
-    private MenuItem ram;
-
-    @FXML
-    private MenuItem disk;
-
-    @FXML
-    private MenuItem supply;
-
-    @FXML
-    private MenuItem compCase;
-
-    @FXML
-    private MenuItem graphicsCard;
-
-    @FXML
-    private TextField productIdField;
-
-    private String path;
-    private String productId;
-
-    @FXML
-    void executeRequest(ActionEvent event) {
-        if (componentType == null || productId == null)
-            new NullAlert().popupAllert();
-
-        String uri = UriCreator.getUriCreator().prepareUri(path, componentType, productId);
-        UriExecutor uriExecutor = new UriExecutor(uri);
-        uriExecutor.execute();
     }
 
-    @FXML
-    void showOneComponentGet(ActionEvent event) {
-        this.oneComponentGet.setVisible(true);
+    private void clearPane(Pane pane) {
+        pane.getChildren().clear();
     }
 
-    private String componentType;
-
-    public void chooseComponent(ActionEvent actionEvent) {
-        if (actionEvent.getSource() == cpu)
-            this.componentType = "cpu";
-
-        this.path = "components";
-        updateLabelType();
-    }
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        productIdField.setOnKeyReleased(event -> {
-            updateLabelId();
-        });
-    }
-
-    private void updateLabelId() {
-        productId = productIdField.getText();
-        this.productIdLabel.setText(String.valueOf(productId));
-    }
-
-    private void updateLabelType() {
-        this.typeLabel.setText(componentType);
-    }
 }

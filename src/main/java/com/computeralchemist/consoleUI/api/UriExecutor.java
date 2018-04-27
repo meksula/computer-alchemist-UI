@@ -5,6 +5,7 @@ import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
 import javax.ws.rs.core.MediaType;
+import java.net.URI;
 
 /**
  * @Author
@@ -12,25 +13,16 @@ import javax.ws.rs.core.MediaType;
  * 25-04-2018
  * */
 
-public class UriExecutor {
-    private String uri;
+public class UriExecutor implements UriExecute {
 
-    public UriExecutor(String uri) {
-        this.uri = uri;
-    }
-
-    public void execute() {
+    @Override
+    public String execute(String path) {
         Client client = Client.create();
-
-        WebResource webResource = client.resource(uri);
+        WebResource webResource = client.resource(URI.create(path));
 
         ClientResponse response = webResource.accept(MediaType.APPLICATION_JSON_TYPE)
                 .get(ClientResponse.class);
 
-        String json = response.getEntity(String.class);if (response.getStatus() != 200) {
-            System.out.println("Nie powiodło się.");
-        }
-
-        System.out.println(json);
+        return response.getEntity(String.class);
     }
 }

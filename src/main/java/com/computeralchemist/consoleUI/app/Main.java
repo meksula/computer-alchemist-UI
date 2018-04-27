@@ -36,12 +36,3 @@ public class Main extends Application {
         launch(args);
     }
 }
-    /*FXMLLoader loader = new FXMLLoader(this.getClass().getResource("Welcome.fxml"));
-    Parent root = loader.load();
-    Scene scene = new Scene(root);
-        scene.getStylesheets().add("styles.css");
-                primaryStage.setScene(scene);
-                primaryStage.setTitle("Learning controller");
-                primaryStage.setResizable(false);
-                primaryStage.setOnCloseRequest(event -> closeDialogue());
-                primaryStage.show();*/

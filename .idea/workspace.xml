@@ -2,48 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0e843af-57cc-46c0-b970-172b23bb7cbc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileChanges/last-build.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gradle/vcsWorkingDirs/gc.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_client_1_19_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_jersey_jersey_core_1_19_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_ws_rs_jsr311_api_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_main.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_test.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/alerts/NullAlert.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/StringUriBuilder.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriCreator.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriExecutor.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/app/Main.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/controller/PlatformController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/controller/WelcomeController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/resources/others/computer-alchemist.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/resources/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/resources/templates/platform.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/resources/templates/welcome.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/alerts/NullAlert.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/WelcomeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/others/computer-alchemist.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/platform.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome.fxml" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/annotation-processors.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/lombok-1.16.20.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/computer-alchemist.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/ComponentUriCreator$StringUriBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/ComponentUriCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriExecute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/ComputerComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/computerCase/ComputerCase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/computerCase/ComputerCaseParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/cpu/Cpu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/cpu/CpuParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/disk/Disk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/disk/DiskParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/disk/DriveType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/gpu/GraphicsCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/gpu/GraphicsCardParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/motherboard/Motherboard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/motherboard/MotherboardParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/ram/Ram.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/ram/RamParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/supply/PowerSupply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/components/supply/PowerSupplyParameters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/exception/CannotReadTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/mapping/ComponentJsonMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/mapping/JsonMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/mapping/ObjectMapperSimpleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/classes/com/computeralchemist/consoleUI/mapping/ComponentJsonMapperTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/ComponentDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/ComponentUriCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/DataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ComputerComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/computerCase/ComputerCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/computerCase/ComputerCaseParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/Cpu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/CpuParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/disk/Disk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/disk/DiskParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/disk/DriveType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/gpu/GraphicsCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/gpu/GraphicsCardParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/motherboard/Motherboard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/motherboard/MotherboardParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ram/Ram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ram/RamParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/supply/PowerSupply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/supply/PowerSupplyParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/exception/CannotReadTypeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CaseDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CpuDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DiskDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/GpuDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/MotherboardDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/PresenterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/RamDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/SupplyDataPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ComponentUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ListOfComponentsUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ListOfSetsUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/SetUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/UIManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/JsonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ObjectMapperSimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/pane.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/computer-alchemist-admin-ui_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/StringUriBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/api/UriExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/controller/PlatformController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/computeralchemist/consoleUI/controller/PlatformController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/platform.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/templates/platform.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/platform.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/platform.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -61,14 +112,31 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PlatformController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3357#3358#0" expanded="true" />
+                <element signature="e#3399#3400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="FxmlFile" />
         <option value="Singleton" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -79,7 +147,7 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-bin/4jp4stjndanmxuerzfseyb6wo/gradle-4.6" />
+        <entry key="$PROJECT_DIR$" value="/usr/lib/gradle/4.6" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -254,8 +322,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3049210058000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3875124010" />
+        <entry key="$PROJECT_DIR$" value="4574128523000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3079865181" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2736581421" />
       </map>
     </option>
@@ -362,9 +431,6 @@
         </entry>
       </map>
     </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
     <option name="projectSyncType">
       <map>
         <entry key="$USER_HOME$/computer-alchemist" value="PREVIEW" />
@@ -376,27 +442,74 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/welcome.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/platform.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/PlatformController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/WelcomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/alerts/NullAlert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/Cpu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/ComponentManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/DataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/JsonMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/disk/Disk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/gpu/GraphicsCard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/motherboard/Motherboard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ram/Ram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/supply/PowerSupply.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/computerCase/ComputerCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/JsonDataProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/exception/CannotReadTypeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/ComponentDataProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ComputerComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/CpuParameters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/Cpu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ObjectMapperSimpleFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/ComponentUriCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/PresenterFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/CpuPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/Presenter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/platform.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ListOfComponentsUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ListOfSetsUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/SetUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ComponentUi.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ui/getComponent.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/pane.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/pane.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ComponentUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/UIManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CpuDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/UIManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ComponentUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/MotherboardDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/RamDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DiskDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/SupplyDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/GpuDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CaseDataPresenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/PresenterFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -408,20 +521,12 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -479,37 +584,87 @@
               <item name="computer-alchemist-admin-ui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleUI" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="computer-alchemist-admin-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="computer-alchemist-admin-ui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="others" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleUI" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-alchemist-admin-ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-alchemist-admin-ui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleUI" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="dataPresentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-alchemist-admin-ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-alchemist-admin-ui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleUI" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-alchemist-admin-ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-alchemist-admin-ui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleUI" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="/opt/SceneBuilder/SceneBuilder" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.computeralchemist.consoleUI.mapping" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/parts" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components" />
       <recent name="$PROJECT_DIR$/src/main/resources/others" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.computeralchemist.consoleUI.gui.dataPresentation" />
+      <recent name="com.computeralchemist.consoleUI.gui" />
+      <recent name="com.computeralchemist.consoleUI.mapping" />
+      <recent name="com.computeralchemist.consoleUI.api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -524,49 +679,82 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="com.computeralchemist.consoleUI.app.Main" />
+      <module name="computer-alchemist-admin-ui_main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.computeralchemist.consoleUI.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.computeralchemist.consoleUI.app.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    </configuration>
+    <configuration name="UriExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.computeralchemist.consoleUI.api.UriExecutor" />
       <module name="computer-alchemist-admin-ui_main" />
-      <envs />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.computeralchemist.consoleUI.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ComponentJsonMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="computer-alchemist-admin-ui_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.computeralchemist.consoleUI.mapping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
+      <option name="PACKAGE_NAME" value="com.computeralchemist.consoleUI.mapping" />
+      <option name="MAIN_CLASS_NAME" value="com.computeralchemist.consoleUI.mapping.ComponentJsonMapperTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ComponentJsonMapperTest.extractComponentTypeShouldWorkCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="computer-alchemist-admin-ui_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.computeralchemist.consoleUI.mapping.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.computeralchemist.consoleUI.mapping" />
+      <option name="MAIN_CLASS_NAME" value="com.computeralchemist.consoleUI.mapping.ComponentJsonMapperTest" />
+      <option name="METHOD_NAME" value="extractComponentTypeShouldWorkCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -576,24 +764,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -606,17 +783,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -624,14 +805,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.UriExecutor" />
+      <item itemvalue="JUnit.ComponentJsonMapperTest.extractComponentTypeShouldWorkCorrectly" />
+      <item itemvalue="JUnit.ComponentJsonMapperTest" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ComponentJsonMapperTest" />
+        <item itemvalue="JUnit.ComponentJsonMapperTest.extractComponentTypeShouldWorkCorrectly" />
+        <item itemvalue="Application.UriExecutor" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -645,45 +832,85 @@
       <updated>1524604862940</updated>
       <workItem from="1524604866000" duration="715000" />
       <workItem from="1524605681912" duration="10403000" />
+      <workItem from="1524739417092" duration="380000" />
+      <workItem from="1524740132123" duration="18576000" />
+      <workItem from="1524785274390" duration="4937000" />
+      <workItem from="1524848682807" duration="8419000" />
+      <workItem from="1524857895702" duration="273000" />
+      <workItem from="1524858208038" duration="5969000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 39m 44s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 40m 21s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 40m 33s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 40m 48s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 40m 58s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 41m 32s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 41m 51s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 42m 21s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 42m 49s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComponentJsonMapperTest - 2018.04.27 at 01h 50m 50s.xml">
+      <configuration name="ComponentJsonMapperTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11118000" />
+    <option name="totallyTimeSpent" value="49672000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="47" width="1360" height="743" extended-state="6" />
+    <frame x="0" y="25" width="1360" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25882354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3301887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.328594" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.21169037" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" internal_type="SLIDING" order="2" weight="0.328594" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.328594" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24705882" />
+      <window_info anchor="bottom" id="Statistic" order="9" weight="0.328594" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968404" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="11" weight="0.3301738" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -693,61 +920,178 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-            <element signature="e#897#898#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/welcome.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/PlatformController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/consuming.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/tbv.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/alerts/NullAlert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="42" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/PlatformController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/Cpu.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/computerCase/ComputerCaseParameters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="8">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ram/RamParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/supply/PowerSupply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/computerCase/ComputerCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ram/Ram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/motherboard/Motherboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/gpu/GraphicsCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/disk/Disk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="87" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/exception/CannotReadTypeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/Cpu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/cpu/CpuParameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/ComponentUriCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/WelcomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state relative-caret-position="441">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/components/ComputerComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="19" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -755,96 +1099,211 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/platform.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="73" column="81" lean-forward="true" selection-start-line="73" selection-start-column="81" selection-end-line="73" selection-end-column="81" />
-          <folding />
+        <state relative-caret-position="401">
+          <caret line="50" column="92" selection-start-line="50" selection-start-column="62" selection-end-line="50" selection-end-column="98" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/pane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ListOfComponentsUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/consuming.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ListOfSetsUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/tbv.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/ComponentDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/alerts/NullAlert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/StringUriBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="191">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/DataProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/SetUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ObjectMapperSimpleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/JsonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/UIManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/mapping/ComponentJsonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/MotherboardDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/RamDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CpuDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/ui/ComponentUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="67" column="49" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/DiskDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/SupplyDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/GpuDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/CaseDataPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/gui/dataPresentation/PresenterFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/controller/PlatformController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1793#1794#0" expanded="true" />
-            <element signature="e#1846#1847#0" expanded="true" />
-            <element signature="e#2465#2466#0" expanded="true" />
-            <element signature="e#2518#2519#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/computeralchemist/consoleUI/api/UriCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#3357#3358#0" expanded="true" />
+            <element signature="e#3399#3400#0" expanded="true" />
           </folding>
         </state>
       </provider>
