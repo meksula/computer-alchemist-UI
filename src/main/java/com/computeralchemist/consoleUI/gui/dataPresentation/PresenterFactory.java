@@ -9,24 +9,30 @@ import com.computeralchemist.consoleUI.components.ComputerComponent;
  * */
 
 public class PresenterFactory {
+    private DataPresenter dataPresenter;
+    private String resource;
 
     public DataPresenter createGuiPresenter(ComputerComponent component) {
-        if (component.getComponentType().equals("cpu"))
-            return new CpuDataPresenter(component);
-        else if (component.getComponentType().equals("motherboard"))
-            return new MotherboardDataPresenter(component);
-        else if (component.getComponentType().equals("ram"))
-            return new RamDataPresenter(component);
-        else if (component.getComponentType().equals("disk"))
-            return new DiskDataPresenter(component);
-        else if (component.getComponentType().equals("supply"))
-            return new SupplyDataPresenter(component);
-        else if (component.getComponentType().equals("gpu"))
-            return new GpuDataPresenter(component);
-        else if (component.getComponentType().equals("computercase"))
-            return new CaseDataPresenter(component);
+        dataPresenter = new DataPresenter();
 
-        return null;
+        if (component.getComponentType().equals("cpu"))
+            this.resource = "/templates/parts/components/cpu.fxml";
+        else if (component.getComponentType().equals("motherboard"))
+            this.resource = "/templates/parts/components/motherboard.fxml";
+        else if (component.getComponentType().equals("ram"))
+            this.resource = "/templates/parts/components/ram.fxml";
+        else if (component.getComponentType().equals("disk"))
+            this.resource = "/templates/parts/components/disk.fxml";
+        else if (component.getComponentType().equals("supply"))
+            this.resource = "/templates/parts/components/supply.fxml";
+        else if (component.getComponentType().equals("gpu"))
+            this.resource = "/templates/parts/components/gpu.fxml";
+        else if (component.getComponentType().equals("computercase"))
+            this.resource = "/templates/parts/components/computercase.fxml";
+
+        dataPresenter.setResourceUri(resource);
+        dataPresenter.setComputerComponent(component);
+        return dataPresenter;
     }
 
 }

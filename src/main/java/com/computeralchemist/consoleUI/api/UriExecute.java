@@ -1,7 +1,5 @@
 package com.computeralchemist.consoleUI.api;
 
-import java.net.URI;
-
 /**
  * @Author
  * Karol Meksuła
@@ -9,5 +7,7 @@ import java.net.URI;
  * */
 
 public interface UriExecute {
-    String execute(String path);
+    String execute();
+
+    void setAbsolutePath(String path);
 }

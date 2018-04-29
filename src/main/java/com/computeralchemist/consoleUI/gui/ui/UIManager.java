@@ -2,7 +2,6 @@ package com.computeralchemist.consoleUI.gui.ui;
 
 import com.computeralchemist.consoleUI.api.DataProvider;
 import com.computeralchemist.consoleUI.exception.CannotReadTypeException;
-import com.computeralchemist.consoleUI.gui.dataPresentation.DataPresenter;
 import com.computeralchemist.consoleUI.gui.dataPresentation.PresenterFactory;
 import javafx.scene.layout.Pane;
 
@@ -17,12 +16,12 @@ import java.util.regex.Pattern;
  * */
 
 public abstract class UIManager {
-    PresenterFactory presenterFactory;
+    protected PresenterFactory presenterFactory;
     DataProvider dataProvider;
 
     public abstract void arrangePane(Pane pane) throws IOException;
 
-    protected String getType(String source) {
+    String getType(String source) {
         Pattern pattern = Pattern.compile("=[a-z]{3,},");
         Matcher matcher = pattern.matcher(source);
         if (matcher.find()) {

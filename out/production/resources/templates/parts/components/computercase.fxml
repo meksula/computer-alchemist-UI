@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane prefHeight="438.0" prefWidth="560.0" styleClass="welcome" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.consoleUI.controller.PresenterPanelController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" styleClass="txt" text="Computer Case" />
+        <HBox layoutX="14.0" layoutY="40.0" prefHeight="194.0" prefWidth="529.0">
+            <children>
+                <VBox prefHeight="303.0" prefWidth="195.0">
+                    <children>
+                        <Label prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Producent" />
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Model" />
+                        <Label layoutX="10.0" layoutY="26.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Votes" />
+                        <Label layoutX="10.0" layoutY="26.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Rates (average)" />
+                        <Label layoutX="10.0" layoutY="58.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Type" />
+                        <Label layoutX="10.0" layoutY="74.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Height [mm]" />
+                        <Label layoutX="10.0" layoutY="90.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Width [mm]" />
+                        <Label layoutX="10.0" layoutY="106.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Weight [g]" />
+                        <Label layoutX="10.0" layoutY="122.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Compatible motherboard's type" />
+                        <Label layoutX="10.0" layoutY="138.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Front connectors" />
+                    </children>
+                </VBox>
+                <VBox layoutX="10.0" layoutY="10.0" prefHeight="194.0" prefWidth="320.0">
+                    <children>
+                        <Label fx:id="producent" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
+                        <Label fx:id="model" layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="337.0" styleClass="txt" />
+                        <Label fx:id="votes" layoutX="10.0" layoutY="26.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
+                        <Label fx:id="rates" layoutX="10.0" layoutY="42.0" prefHeight="16.0" prefWidth="419.0" styleClass="txt" />
+                        <Label fx:id="type" layoutX="10.0" layoutY="58.0" prefHeight="16.0" prefWidth="318.0" styleClass="txt" />
+                        <Label fx:id="height" layoutX="10.0" layoutY="74.0" prefHeight="16.0" prefWidth="326.0" styleClass="txt" />
+                        <Label fx:id="width" layoutX="10.0" layoutY="90.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
+                        <Label fx:id="weight" layoutX="10.0" layoutY="106.0" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
+                        <Label fx:id="compatibleMotherboards" layoutX="10.0" layoutY="122.0" prefHeight="16.0" prefWidth="333.0" styleClass="txt" />
+                        <Label fx:id="connectors" layoutX="10.0" layoutY="138.0" prefHeight="16.0" prefWidth="333.0" styleClass="txt" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Label layoutX="14.0" layoutY="280.0" styleClass="txt" text="Description" />
+        <ImageView fitHeight="37.0" fitWidth="26.0" layoutX="530.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../img/pencil.png" />
+            </image>
+        </ImageView>
+    </children>
+</Pane>

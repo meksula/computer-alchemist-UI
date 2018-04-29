@@ -2,8 +2,7 @@ package com.computeralchemist.consoleUI.gui.ui;
 
 import com.computeralchemist.consoleUI.api.ComponentDataProvider;
 import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.gui.dataPresentation.CpuDataPresenter;
-import com.computeralchemist.consoleUI.gui.dataPresentation.DataPresenter;
+import com.computeralchemist.consoleUI.gui.dataPresentation.PresenterFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +12,7 @@ import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 /**
@@ -23,16 +22,12 @@ import java.util.ResourceBundle;
  * */
 
 public class ComponentUI extends UIManager implements Initializable {
+
     @FXML
     private TextField idField;
     private Pane pane;
     private String componentType;
     private String productId;
-    private ArrayList<String> pathElements;
-
-    public ComponentUI() {
-        this.dataProvider = new ComponentDataProvider(pathElements);
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -50,9 +45,9 @@ public class ComponentUI extends UIManager implements Initializable {
         }
     }
 
-    public void loadUiPane() throws IOException {
+    private void loadUiPane() throws IOException {
         FXMLLoader loader = new FXMLLoader(this.getClass()
-                .getResource("/templates/parts/pane.fxml"));
+                .getResource("/templates/parts/componentGet.fxml"));
         Pane ui = loader.load();
 
         pane.getChildren().addAll(ui);
@@ -60,12 +55,15 @@ public class ComponentUI extends UIManager implements Initializable {
 
     @FXML
     public void executeRequest(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
+        initDataProvider();
         ComputerComponent computerComponent = dataProvider.getComponent();
         selectPresenter(computerComponent);
     }
 
     private void selectPresenter(ComputerComponent computerComponent) {
-        presenterFactory.createGuiPresenter(computerComponent).presentComponent();
+        new PresenterFactory()
+                .createGuiPresenter(computerComponent)
+                .presentComponent();
     }
 
     @FXML
@@ -73,10 +71,9 @@ public class ComponentUI extends UIManager implements Initializable {
         this.componentType = getType(actionEvent.getSource().toString());
     }
 
-    private void initList() {
-        pathElements = new ArrayList<>();
-        pathElements.add(componentType);
-        pathElements.add(productId);
+    private void initDataProvider() {
+        String[] elements = {componentType, productId};
+        dataProvider = new ComponentDataProvider(Arrays.asList(elements));
     }
 
 }

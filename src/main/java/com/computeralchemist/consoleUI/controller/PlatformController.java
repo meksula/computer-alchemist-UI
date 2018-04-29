@@ -1,5 +1,6 @@
 package com.computeralchemist.consoleUI.controller;
 
+import com.computeralchemist.consoleUI.gui.dataPresentation.DataPresenter;
 import com.computeralchemist.consoleUI.gui.ui.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,30 +33,21 @@ public class PlatformController {
         controllPane.setVisible(true);
         clearPane(controllPane);
 
-        if (event.getSource() == getComponentButton) {
-            clearPane(controllPane);
+        if (event.getSource() == getComponentButton)
             uiManager = new ComponentUI();
-            uiManager.arrangePane(controllPane);
-        }
 
-        else if (event.getSource() == getComponentListButton) {
-            clearPane(controllPane);
+        else if (event.getSource() == getComponentListButton)
             uiManager = new ListOfComponentsUI();
-            uiManager.arrangePane(controllPane);
-        }
 
-        else if (event.getSource() == getSetButton) {
-            clearPane(controllPane);
+        else if (event.getSource() == getSetButton)
             uiManager = new SetUI();
-            uiManager.arrangePane(controllPane);
-        }
 
-        else if (event.getSource() == getSetListButton) {
-            clearPane(controllPane);
+        else if (event.getSource() == getSetListButton)
             uiManager = new ListOfSetsUI();
-            uiManager.arrangePane(controllPane);
-        }
 
+
+        uiManager.arrangePane(controllPane);
+        DataPresenter.setPresenter(presenter);
     }
 
     private void clearPane(Pane pane) {

@@ -32,7 +32,8 @@ public class ComponentDataProvider implements DataProvider {
     @Override
     public ComputerComponent getComponent() throws IOException, ClassNotFoundException {
         this.requestUri = uriCreator.prepareUri(pathElements);
-        json = uriExecute.execute(this.requestUri);
+        uriExecute.setAbsolutePath(requestUri);
+        json = uriExecute.execute();
         return jsonMapper.parseJson(json);
     }
 }

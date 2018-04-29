@@ -1,7 +1,6 @@
 package com.computeralchemist.consoleUI.mapping;
 
 import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
 
 import java.io.IOException;
 import java.util.regex.Matcher;
@@ -30,7 +29,7 @@ public class ComponentJsonMapper implements JsonMapper {
         return factory.mapByType(json, type);
     }
 
-    private String extractComponentType() {
+    protected String extractComponentType() {
         String REGEX = "Type\" : \"[a-z]{3,}\"";
         Pattern pattern = Pattern.compile(REGEX);
         Matcher matcher = pattern.matcher(json);
