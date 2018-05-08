@@ -1,8 +1,13 @@
 package com.computeralchemist.consoleUI.mapping;
 
 import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.consoleUI.components.cpu.Cpu;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,11 +19,13 @@ import java.util.regex.Pattern;
 
 public class ComponentJsonMapper implements JsonMapper {
     private ObjectMapperSimpleFactory factory;
+    private ObjectMapper objectMapper;
     private String json;
-    String type;
+    protected String type;
 
     public ComponentJsonMapper() {
         factory = new ObjectMapperSimpleFactory();
+        objectMapper = new ObjectMapper();
     }
 
     @Override
@@ -29,7 +36,17 @@ public class ComponentJsonMapper implements JsonMapper {
         return factory.mapByType(json, type);
     }
 
-    protected String extractComponentType() {
+    @Override
+    public String componentJson(ComputerComponent computerComponent) throws JsonProcessingException {
+        return objectMapper.writeValueAsString(computerComponent);
+    }
+
+    @Override
+    public List<ComputerComponent> listOfComponents(String json, String componentType) throws IOException {
+        return factory.mapToListByType(json, componentType);
+    }
+
+    String extractComponentType() {
         String REGEX = "Type\" : \"[a-z]{3,}\"";
         Pattern pattern = Pattern.compile(REGEX);
         Matcher matcher = pattern.matcher(json);

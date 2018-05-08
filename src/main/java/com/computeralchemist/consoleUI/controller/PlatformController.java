@@ -24,6 +24,9 @@ public class PlatformController {
     public Pane controllPane;
 
     @FXML
+    private MenuItem postComponent;
+
+    @FXML
     private MenuItem getComponentButton, getComponentListButton, getSetButton, getSetListButton;
 
     private UIManager uiManager;
@@ -54,4 +57,12 @@ public class PlatformController {
         pane.getChildren().clear();
     }
 
+    @FXML
+    public void postComponent(ActionEvent actionEvent) throws IOException {
+        clearPane(controllPane);
+        clearPane(presenter);
+
+        uiManager = new PostComponentUI();
+        uiManager.arrangePane(controllPane);
+    }
 }

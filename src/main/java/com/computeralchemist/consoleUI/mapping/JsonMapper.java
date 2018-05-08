@@ -1,8 +1,10 @@
 package com.computeralchemist.consoleUI.mapping;
 
 import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Author
@@ -12,4 +14,8 @@ import java.io.IOException;
 
 public interface JsonMapper {
     ComputerComponent parseJson(String json) throws ClassNotFoundException, IOException;
+
+    String componentJson(ComputerComponent computerComponent) throws JsonProcessingException;
+
+    List<ComputerComponent> listOfComponents(String json, String type) throws IOException;
 }

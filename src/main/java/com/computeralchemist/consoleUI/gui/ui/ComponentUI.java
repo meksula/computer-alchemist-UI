@@ -1,5 +1,6 @@
 package com.computeralchemist.consoleUI.gui.ui;
 
+import com.computeralchemist.consoleUI.alerts.NullAlert;
 import com.computeralchemist.consoleUI.api.ComponentDataProvider;
 import com.computeralchemist.consoleUI.components.ComputerComponent;
 import com.computeralchemist.consoleUI.gui.dataPresentation.PresenterFactory;
@@ -56,7 +57,14 @@ public class ComponentUI extends UIManager implements Initializable {
     @FXML
     public void executeRequest(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
         initDataProvider();
-        ComputerComponent computerComponent = dataProvider.getComponent();
+        ComputerComponent computerComponent;
+        try {
+            computerComponent = dataProvider.getComponent();
+        } catch (RuntimeException e) {
+            new NullAlert().nullcomponentAllert();
+            return;
+        }
+
         selectPresenter(computerComponent);
     }
 

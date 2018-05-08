@@ -1,5 +1,9 @@
-/build
-/.idea
-/.gradle
-/log
+*.iml
+*.ipr
+*.iws
+.idea/
 
+.gradletasknamecache
+.gradle/
+build/
+bin/

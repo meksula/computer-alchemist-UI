@@ -16,6 +16,7 @@ import com.computeralchemist.consoleUI.components.ram.RamParameters;
 import com.computeralchemist.consoleUI.components.supply.PowerSupply;
 import com.computeralchemist.consoleUI.components.supply.PowerSupplyParameters;
 import com.computeralchemist.consoleUI.gui.dataPresentation.DataPresenter;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
@@ -72,6 +73,7 @@ public class PresenterPanelController implements Initializable {
 
     public void displayObjectData(ComputerComponent component) {
         this.component = component;
+
         presentAny();
 
         if (component.getComponentType().equals("cpu"))
@@ -220,5 +222,10 @@ public class PresenterPanelController implements Initializable {
 
         drawList(compatibleMotherboards, param.getCompatibilityMotherboards());
         drawList(connectors, param.getConnectors());
+    }
+
+    @FXML
+    public void editComponent(ActionEvent actionEvent) {
+
     }
 }
