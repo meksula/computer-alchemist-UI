@@ -32,7 +32,7 @@ public class ComponentUI extends UIManager implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        idField.setOnKeyReleased(field -> this.productId = field.getText());
+
     }
 
     @Override

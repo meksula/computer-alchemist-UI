@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane fx:id="canvas" prefHeight="500.0" prefWidth="1000.0" styleClass="welcome" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.consoleUI.controller.PlatformController">
+<AnchorPane fx:id="canvas" prefHeight="500.0" prefWidth="1000.0" styleClass="welcome" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.desktop.gui.controller.PlatformController">
     <children>
         <Label layoutY="478.0" prefHeight="16.0" prefWidth="219.0" styleClass="txt" text="Created by Karol Meksuła 2018" />
       <MenuBar layoutX="-3.0" prefHeight="29.0" prefWidth="377.0">
@@ -24,18 +24,26 @@
           </Menu>
           <Menu mnemonicParsing="false" text="POST">
             <items>
-              <MenuItem fx:id="postComponent" mnemonicParsing="false" onAction="#postComponent" text="Post computer component" />
-                  <MenuItem mnemonicParsing="false" text="Post computer set" />
+              <MenuItem fx:id="postComponent" mnemonicParsing="false" onAction="#showUserPanel" text="Post computer component" />
+                  <MenuItem fx:id="postSet" mnemonicParsing="false" onAction="#showUserPanel" text="Post computer set" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="PICKPOCKET">
             <items>
-              <MenuItem mnemonicParsing="false" text="Parse URL to component" />
-                  <MenuItem mnemonicParsing="false" text="Parse URL to property list" />
+              <MenuItem fx:id="pickpocketComponent" mnemonicParsing="false" onAction="#showUserPanel" text="Parse URL to component" />
+                  <MenuItem fx:id="pickpocketProperties" mnemonicParsing="false" onAction="#showUserPanel" text="Parse URL to property list" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="ACCOUNT" />
-            <Menu mnemonicParsing="false" text="HELP" />
+            <Menu mnemonicParsing="false" text="ACCOUNT">
+               <items>
+                  <MenuItem fx:id="account" mnemonicParsing="false" onAction="#showUserPanel" text="Your account" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="HELP">
+               <items>
+                  <MenuItem fx:id="help" mnemonicParsing="false" onAction="#showUserPanel" text="Show help" />
+               </items>
+            </Menu>
         </menus>
       </MenuBar>
       <Pane fx:id="presenter" layoutX="373.0" layoutY="28.0" prefHeight="476.0" prefWidth="520.0">

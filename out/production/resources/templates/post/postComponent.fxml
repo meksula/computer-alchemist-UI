@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="432.0" prefWidth="313.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.desktop.gui.controller.interaction.manager.ComponentPostButtonManager">
+    <children>
+        <Label layoutX="71.0" layoutY="6.0" styleClass="txt" text="Choose component to `POST`" />
+        <MenuButton fx:id="componentMenu" layoutX="109.0" layoutY="56.0" mnemonicParsing="false" text="Components">
+            <items>
+                <MenuItem fx:id="cpu" mnemonicParsing="false" onAction="#setComponentType" text="cpu" />
+                <MenuItem fx:id="motherboard" mnemonicParsing="false" onAction="#setComponentType" text="motherboard" />
+                <MenuItem fx:id="disk" mnemonicParsing="false" onAction="#setComponentType" text="disk" />
+                <MenuItem fx:id="ram" mnemonicParsing="false" onAction="#setComponentType" text="ram" />
+                <MenuItem fx:id="supply" mnemonicParsing="false" onAction="#setComponentType" text="power supply" />
+                <MenuItem fx:id="computercase" mnemonicParsing="false" onAction="#setComponentType" text="computer case" />
+                <MenuItem fx:id="gpu" mnemonicParsing="false" onAction="#setComponentType" text="graphics card" />
+            </items>
+        </MenuButton>
+    </children>
+</Pane>

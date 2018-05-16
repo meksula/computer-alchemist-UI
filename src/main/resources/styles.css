@@ -5,3 +5,11 @@
 .txt {
     -fx-text-fill: #efe3ee;
 }
+
+.empty {
+    -fx-text-fill: #d81515;
+}
+
+.correctly {
+    -fx-text-fill: #15d818;
+}
