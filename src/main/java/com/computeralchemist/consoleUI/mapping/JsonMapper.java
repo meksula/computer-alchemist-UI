@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.mapping;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.api;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 
 import java.io.IOException;
 

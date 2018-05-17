@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.api.post;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.consoleUI.exception.EmptyUriException;
 import com.computeralchemist.consoleUI.mapping.ComponentJsonMapper;
 import com.computeralchemist.consoleUI.mapping.JsonMapper;

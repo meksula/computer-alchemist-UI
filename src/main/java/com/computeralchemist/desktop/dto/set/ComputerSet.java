@@ -1,12 +1,12 @@
 package com.computeralchemist.desktop.dto.set;
 
-import com.computeralchemist.consoleUI.components.computerCase.ComputerCase;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
-import com.computeralchemist.consoleUI.components.disk.Disk;
-import com.computeralchemist.consoleUI.components.gpu.GraphicsCard;
-import com.computeralchemist.consoleUI.components.motherboard.Motherboard;
-import com.computeralchemist.consoleUI.components.ram.Ram;
-import com.computeralchemist.consoleUI.components.supply.PowerSupply;
+import com.computeralchemist.desktop.dto.components.computerCase.ComputerCase;
+import com.computeralchemist.desktop.dto.components.cpu.Cpu;
+import com.computeralchemist.desktop.dto.components.disk.Disk;
+import com.computeralchemist.desktop.dto.components.gpu.GraphicsCard;
+import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
+import com.computeralchemist.desktop.dto.components.ram.Ram;
+import com.computeralchemist.desktop.dto.components.supply.PowerSupply;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.Getter;
 import lombok.Setter;

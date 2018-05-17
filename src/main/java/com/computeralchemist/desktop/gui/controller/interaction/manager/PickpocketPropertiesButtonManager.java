@@ -1,12 +1,15 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.cpu.Cpu;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
+import com.computeralchemist.desktop.gui.controller.presentation.PickpocketPropertiesPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+
+import java.util.List;
 
 import static com.computeralchemist.desktop.gui.controller.interaction.manager.PickpocketComponentButtonManager.createHintLabel;
 
@@ -21,6 +24,7 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
     private String hint = "In the left side of screen you\nsee extracted values from url." +
             "\nIf you want to build Component,\n" +
             "click link bellow: (The process may be unsuccessful)";
+    private List<String> properties; //TODO lista będzie inicjalizowana po pobraniu wartości.
     private ComputerComponent builded;
 
     @FXML
@@ -36,6 +40,9 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
 
         controllPane.getChildren().add(createHintLabel(hint));
         controllPane.getChildren().add(createEditButton("Build component"));
+
+        PickpocketPropertiesPresenter propertiesPresenter = new PickpocketPropertiesPresenter(properties);
+        propertiesPresenter.presentResult(presenter, "");
     }
 
     private Button createEditButton(String text) {

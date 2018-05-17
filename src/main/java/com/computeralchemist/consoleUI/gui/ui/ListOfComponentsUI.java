@@ -2,7 +2,7 @@ package com.computeralchemist.consoleUI.gui.ui;
 
 import com.computeralchemist.consoleUI.api.UriExecute;
 import com.computeralchemist.consoleUI.api.UriExecutor;
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.consoleUI.gui.dataPresentation.DataPresenter;
 import com.computeralchemist.consoleUI.mapping.ComponentJsonMapper;
 import com.computeralchemist.consoleUI.mapping.JsonMapper;

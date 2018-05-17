@@ -2,7 +2,7 @@ package com.computeralchemist.consoleUI.gui.ui;
 
 import com.computeralchemist.consoleUI.alerts.NullAlert;
 import com.computeralchemist.consoleUI.api.ComponentDataProvider;
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.consoleUI.gui.dataPresentation.PresenterFactory;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

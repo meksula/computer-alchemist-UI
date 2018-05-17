@@ -25,7 +25,7 @@ public class SetGetButtonManager extends PaneManager implements Initializable {
     private TextField idField;
 
     @Override
-    String fxmlName() {
+    protected String fxmlName() {
         return requiredFxml;
     }
 

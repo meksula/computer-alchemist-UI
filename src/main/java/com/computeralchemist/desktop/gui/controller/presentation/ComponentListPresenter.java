@@ -1,8 +1,8 @@
 package com.computeralchemist.desktop.gui.controller.presentation;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
-import com.computeralchemist.consoleUI.components.motherboard.Motherboard;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.cpu.Cpu;
+import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
 import com.computeralchemist.desktop.gui.controller.presentation.nodes.LabelFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

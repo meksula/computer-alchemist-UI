@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.gui.ui.factory;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 
 import java.util.Map;
 

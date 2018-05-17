@@ -4,7 +4,7 @@ import com.computeralchemist.consoleUI.alerts.InputErrorAlert;
 import com.computeralchemist.consoleUI.alerts.ObjectPostedAlert;
 import com.computeralchemist.consoleUI.api.post.PostComputerComponent;
 import com.computeralchemist.consoleUI.api.post.PostObject;
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.consoleUI.exception.FormNotCompleteException;
 import com.computeralchemist.consoleUI.exception.InvalidInputException;
 import com.computeralchemist.consoleUI.gui.ui.factory.ComponentFactory;

@@ -1,8 +1,8 @@
 package com.computeralchemist.consoleUI.gui.ui.factory;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
-import com.computeralchemist.consoleUI.components.cpu.CpuParameters;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.cpu.Cpu;
+import com.computeralchemist.desktop.dto.components.cpu.CpuParameters;
 import com.computeralchemist.consoleUI.exception.FormNotCompleteException;
 import com.computeralchemist.consoleUI.exception.InvalidInputException;
 import lombok.Getter;

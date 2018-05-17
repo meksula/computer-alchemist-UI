@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.controller;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 
 import javax.ws.rs.core.MultivaluedMap;
 

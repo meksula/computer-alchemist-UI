@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.gui.dataPresentation;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.consoleUI.controller.PresenterPanelController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.Pane;

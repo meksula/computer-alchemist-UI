@@ -1,12 +1,11 @@
 package com.computeralchemist.consoleUI.gui.ui.factory;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.motherboard.Motherboard;
-import com.computeralchemist.consoleUI.components.motherboard.MotherboardParameters;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
+import com.computeralchemist.desktop.dto.components.motherboard.MotherboardParameters;
 import com.computeralchemist.consoleUI.exception.FormNotCompleteException;
 import com.computeralchemist.consoleUI.exception.InvalidInputException;
 
-import java.util.List;
 import java.util.Map;
 
 /**

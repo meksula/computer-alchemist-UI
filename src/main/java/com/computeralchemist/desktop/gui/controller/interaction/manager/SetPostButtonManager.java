@@ -1,8 +1,6 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
 import com.computeralchemist.desktop.dto.set.ComputerSet;
-import com.computeralchemist.desktop.dto.set.GamingComputerSet;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

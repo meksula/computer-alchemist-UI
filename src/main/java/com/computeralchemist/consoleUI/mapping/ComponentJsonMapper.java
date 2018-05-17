@@ -1,9 +1,7 @@
 package com.computeralchemist.consoleUI.mapping;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
-import com.computeralchemist.consoleUI.components.cpu.Cpu;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;

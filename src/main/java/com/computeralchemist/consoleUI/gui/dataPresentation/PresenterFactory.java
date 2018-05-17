@@ -1,6 +1,6 @@
 package com.computeralchemist.consoleUI.gui.dataPresentation;
 
-import com.computeralchemist.consoleUI.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 
 /**
  * @Author

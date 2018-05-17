@@ -12,14 +12,21 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile 'org.mockito:mockito-core:2.8.0'
-    testCompile 'org.powermock:powermock-api-mockito2:1.7.0RC2'
-    testCompile 'org.powermock:powermock-module-junit4:1.7.0'
-    testCompile 'org.powermock:powermock-core:1.7.0'
-    testCompile 'org.powermock:powermock-module-junit4-rule:1.7.0'
 
-    compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.19.4'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.5'
+
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: '2.27'
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-common', version: '2.27'
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.5'
+    compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.9.5'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.27'
+
+    compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.19.4'
+
+    compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.27'
 }
 
 dependencies {

@@ -11,7 +11,7 @@ import javafx.scene.Parent;
 public class AcountButtonManager extends PaneManager {
 
     @Override
-    String fxmlName() {
+    protected String fxmlName() {
         return null;
     }
 }
