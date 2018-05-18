@@ -1,5 +1,7 @@
 package com.computeralchemist.desktop.gui.controller.presentation;
 
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.dto.set.ComputerSet;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.Pane;
@@ -16,10 +18,22 @@ public abstract class ResultPresenter {
     protected static Pane presenter;
     protected String fxmlName;
     protected String fxmlPath;
+    protected static ComputerComponent computerComponent;
+    protected static ComputerSet computerSet;
 
-    public final void presentResult(Parent parent, String fxmlName) {
-        presenter = (Pane) parent;
-        this.fxmlName = fxmlName;
+    public final void presentResult(Parent parent, ComputerComponent computerComponent) {
+        ResultPresenter.presenter = (Pane) parent;
+        this.fxmlName = computerComponent.getComponentType();
+        ResultPresenter.computerComponent = computerComponent;
+
+        fxmlPath = setFxmlPath();
+        loadPresenter();
+    }
+
+    public final void presentResult(Parent parent, ComputerSet computerSet) {
+        ResultPresenter.presenter = (Pane) parent;
+        this.fxmlName = computerSet.getType().toString();
+        ResultPresenter.computerSet = computerSet;
 
         fxmlPath = setFxmlPath();
         loadPresenter();

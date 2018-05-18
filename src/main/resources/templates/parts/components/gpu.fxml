@@ -34,21 +34,21 @@
                 </VBox>
                 <VBox layoutX="10.0" layoutY="10.0" prefHeight="194.0" prefWidth="320.0">
                     <children>
-                        <Label fx:id="producent" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
-                        <Label fx:id="model" layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="337.0" styleClass="txt" />
-                        <Label fx:id="votes" layoutX="10.0" layoutY="26.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
-                        <Label fx:id="rates" layoutX="10.0" layoutY="42.0" prefHeight="16.0" prefWidth="419.0" styleClass="txt" />
-                        <Label fx:id="standards" layoutX="10.0" layoutY="58.0" prefHeight="16.0" prefWidth="318.0" styleClass="txt" />
-                        <Label fx:id="chipset" layoutX="10.0" layoutY="74.0" prefHeight="16.0" prefWidth="326.0" styleClass="txt" />
-                        <Label fx:id="memory" layoutX="10.0" layoutY="90.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
-                        <Label fx:id="memoryType" layoutX="10.0" layoutY="106.0" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
-                        <Label fx:id="memoryFrequency" layoutX="10.0" layoutY="122.0" prefHeight="16.0" prefWidth="333.0" styleClass="txt" />
-                        <Label fx:id="connector" layoutX="10.0" layoutY="138.0" prefHeight="16.0" prefWidth="350.0" styleClass="txt" />
-                        <Label fx:id="length" layoutX="10.0" layoutY="154.0" prefHeight="16.0" prefWidth="339.0" styleClass="txt" />
-                        <Label fx:id="clockFrequency" layoutX="10.0" layoutY="170.0" prefHeight="16.0" prefWidth="328.0" styleClass="txt" />
-                        <Label fx:id="resolution" layoutX="10.0" layoutY="186.0" prefHeight="16.0" prefWidth="343.0" styleClass="txt" />
-                        <Label fx:id="cooler" layoutX="10.0" layoutY="202.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Cooler" />
-                        <Label fx:id="connectors" layoutX="10.0" layoutY="218.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" />
+                        <Label fx:id="value1" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
+                        <Label fx:id="value2" layoutX="10.0" layoutY="10.0" prefHeight="16.0" prefWidth="337.0" styleClass="txt" />
+                        <Label fx:id="value3" layoutX="10.0" layoutY="26.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
+                        <Label fx:id="value4" layoutX="10.0" layoutY="42.0" prefHeight="16.0" prefWidth="419.0" styleClass="txt" />
+                        <Label fx:id="value5" layoutX="10.0" layoutY="58.0" prefHeight="16.0" prefWidth="318.0" styleClass="txt" />
+                        <Label fx:id="value6" layoutX="10.0" layoutY="74.0" prefHeight="16.0" prefWidth="326.0" styleClass="txt" />
+                        <Label fx:id="value7" layoutX="10.0" layoutY="90.0" prefHeight="16.0" prefWidth="426.0" styleClass="txt" />
+                        <Label fx:id="value8" layoutX="10.0" layoutY="106.0" prefHeight="16.0" prefWidth="334.0" styleClass="txt" />
+                        <Label fx:id="value9" layoutX="10.0" layoutY="122.0" prefHeight="16.0" prefWidth="333.0" styleClass="txt" />
+                        <Label fx:id="value10" layoutX="10.0" layoutY="138.0" prefHeight="16.0" prefWidth="350.0" styleClass="txt" />
+                        <Label fx:id="value11" layoutX="10.0" layoutY="154.0" prefHeight="16.0" prefWidth="339.0" styleClass="txt" />
+                        <Label fx:id="value12" layoutX="10.0" layoutY="170.0" prefHeight="16.0" prefWidth="328.0" styleClass="txt" />
+                        <Label fx:id="value13" layoutX="10.0" layoutY="186.0" prefHeight="16.0" prefWidth="343.0" styleClass="txt" />
+                        <Label fx:id="value14" layoutX="10.0" layoutY="202.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" text="Cooler" />
+                        <Label fx:id="value15" layoutX="10.0" layoutY="218.0" prefHeight="16.0" prefWidth="206.0" styleClass="txt" />
                     </children>
                 </VBox>
             </children>

@@ -1,6 +1,6 @@
 package com.computeralchemist.desktop.gui.controller;
 
-import com.computeralchemist.consoleUI.exception.CannotReadTypeException;
+import com.computeralchemist.desktop.exception.CannotReadTypeException;
 import com.computeralchemist.desktop.gui.controller.interaction.ManagerFactory;
 import com.computeralchemist.desktop.gui.controller.interaction.UIManagerFactory;
 import com.computeralchemist.desktop.gui.controller.interaction.manager.PaneManager;

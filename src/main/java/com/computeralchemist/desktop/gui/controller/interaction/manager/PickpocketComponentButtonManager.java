@@ -1,5 +1,6 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,6 +27,8 @@ public class PickpocketComponentButtonManager extends PaneManager implements Ini
                             + "\nIf you're not satisfied with the result\n" +
                                 "edit these values yourself.\nTo do this click button bellow.";
 
+    private ComputerComponent computerComponent;
+
     @FXML
     private TextField linkField;
 
@@ -46,7 +49,7 @@ public class PickpocketComponentButtonManager extends PaneManager implements Ini
     }
 
     private void guiSets() {
-        new ComponentGetPresenter().presentResult(presenter, componentType);
+        new ComponentGetPresenter().presentResult(presenter, computerComponent);
         cleanControllPane();
 
         controllPane.getChildren().add(createHintLabel(hint));

@@ -1,7 +1,7 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
 import com.computeralchemist.desktop.dto.set.ComputerSet;
-import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
+import com.computeralchemist.desktop.gui.controller.presentation.SetGetPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -91,7 +91,7 @@ public class SetPostButtonManager extends PaneManager implements Initializable {
     }
 
     private void loadComponentView(String componentType) {
-        new ComponentGetPresenter().presentResult(componentPrevievPane, componentType);
+        new SetGetPresenter().presentResult(componentPrevievPane, computerSet);
     }
 
     @FXML

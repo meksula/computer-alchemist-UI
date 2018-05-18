@@ -1,5 +1,6 @@
 package com.computeralchemist.desktop.logic.command;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -10,21 +11,23 @@ import java.util.List;
 
 public abstract class RequestCommand<T> {
 
-    public T executeGetRequest(List<String> uriParts) {
+    public T executeGetRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
         String uri = createUri(uriParts);
+        System.out.println("Connect to: " + uri);
         String jsonResult = executeGetUri(uri);
+        System.out.println("Result: " + jsonResult);
 
         return mapToObject(jsonResult);
     }
 
-    public T executePostRequest(List<String> uriParts) {
+    public T executePostRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
         String uri = createUri(uriParts);
         String jsonResult = executePostUri(uri);
 
         return mapToObject(jsonResult);
     }
 
-    public T executePutRequest(List<String> uriParts) {
+    public T executePutRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
         String uri = createUri(uriParts);
         String jsonResult = executePutUri(uri);
 
@@ -36,7 +39,7 @@ public abstract class RequestCommand<T> {
         return executeDeleteUri(uri);
     }
 
-    protected abstract T mapToObject(String jsonResult);
+    protected abstract T mapToObject(String jsonResult) throws IOException, ClassNotFoundException;
 
     protected abstract String createUri(List<String> uriParts);
 

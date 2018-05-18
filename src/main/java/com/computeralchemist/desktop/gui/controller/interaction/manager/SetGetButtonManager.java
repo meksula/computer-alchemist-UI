@@ -1,5 +1,6 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
+import com.computeralchemist.desktop.dto.set.ComputerSet;
 import com.computeralchemist.desktop.gui.controller.presentation.SetGetPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,6 +21,7 @@ public class SetGetButtonManager extends PaneManager implements Initializable {
     private String requiredFxml = "parts/sets";
     private String computerSetType;
     private String productId;
+    private ComputerSet computerSet;
 
     @FXML
     private TextField idField;
@@ -41,7 +43,7 @@ public class SetGetButtonManager extends PaneManager implements Initializable {
 
     @FXML
     public void executeRequest(ActionEvent actionEvent) {
-        new SetGetPresenter().presentResult(presenter, computerSetType);
+        new SetGetPresenter().presentResult(presenter, computerSet);
     }
 
 

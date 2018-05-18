@@ -1,18 +1,18 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
+import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
+import com.computeralchemist.desktop.logic.command.ComponentRequestsCommand;
+import com.computeralchemist.desktop.logic.command.RequestCommand;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 /**
@@ -25,6 +25,8 @@ public class ComponentGetButtonManager extends PaneManager implements Initializa
     private final String REQUIRED_FXML = "parts/componentGet";
     private String componentType;
     private String productId;
+    private RequestCommand<ComputerComponent> requestCommand;
+    private ComputerComponent computerComponent;
 
     @FXML
     private TextField idField;
@@ -37,6 +39,8 @@ public class ComponentGetButtonManager extends PaneManager implements Initializa
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         idField.setOnKeyReleased(field -> this.productId = field.getText());
+
+        requestCommand = new ComponentRequestsCommand<>();
     }
 
     @FXML
@@ -45,8 +49,15 @@ public class ComponentGetButtonManager extends PaneManager implements Initializa
     }
 
     @FXML
-    public void executeRequest(ActionEvent actionEvent) {
-        new ComponentGetPresenter().presentResult(presenter, componentType);
+    public void executeRequest(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
+        request();
+
+        new ComponentGetPresenter().presentResult(presenter, computerComponent);
     }
+
+    private void request() throws IOException, ClassNotFoundException {
+        computerComponent = requestCommand.executeGetRequest(Arrays.asList("components", componentType, productId));
+    }
+
 
 }

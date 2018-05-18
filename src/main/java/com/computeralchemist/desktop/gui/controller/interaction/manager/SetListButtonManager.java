@@ -1,5 +1,6 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
+import com.computeralchemist.desktop.dto.set.ComputerSet;
 import com.computeralchemist.desktop.gui.controller.presentation.SetListPresenter;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,6 +15,7 @@ import javafx.scene.control.MenuItem;
 public class SetListButtonManager extends PaneManager {
     private String requiredFxml = "parts/setsList";
     private String computerSetType;
+    private ComputerSet computerSet;
 
     @Override
     protected String fxmlName() {
@@ -27,7 +29,7 @@ public class SetListButtonManager extends PaneManager {
 
     @FXML
     public void executeRequest(ActionEvent actionEvent) {
-        new SetListPresenter().presentResult(presenter, requiredFxml);
+        new SetListPresenter().presentResult(presenter, computerSet);
     }
 
 

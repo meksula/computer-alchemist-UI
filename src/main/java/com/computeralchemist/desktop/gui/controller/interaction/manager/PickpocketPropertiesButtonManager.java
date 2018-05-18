@@ -42,7 +42,7 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
         controllPane.getChildren().add(createEditButton("Build component"));
 
         PickpocketPropertiesPresenter propertiesPresenter = new PickpocketPropertiesPresenter(properties);
-        propertiesPresenter.presentResult(presenter, "");
+        propertiesPresenter.presentResult(presenter, new Cpu());
     }
 
     private Button createEditButton(String text) {
@@ -64,6 +64,6 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
     private void presentBuilded() {
         //TODO ta metoda zaprezentuje zbudowany komponent
         //PS: wszystko działa poprawnie ;)
-        new ComponentGetPresenter().presentResult(presenter, builded.getComponentType());
+        new ComponentGetPresenter().presentResult(presenter, builded);
     }
 }
