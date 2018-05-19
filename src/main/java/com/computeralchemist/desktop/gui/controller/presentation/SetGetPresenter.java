@@ -18,10 +18,9 @@ import java.util.ResourceBundle;
  * */
 
 public class SetGetPresenter extends ResultPresenter implements Initializable {
-    private String resourcePath = "";
 
     @FXML
-    private Label author, createDate, votes, cpu, motherboard, ram, disk, gpu, supply, computercase;
+    private Label author, createDate, cpu, motherboard, ram, disk, gpu, supply, computercase;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -39,6 +38,61 @@ public class SetGetPresenter extends ResultPresenter implements Initializable {
                         presentChoosenComponent(choosenElement);
                     });
                 });
+
+        authorLabel();
+        ramLabel();
+        dateLabel();
+        cpuLabel();
+        motherboardLabel();
+        diskLabel();
+        gpuLabel();
+        supplyLabel();
+        caseLabel();
+    }
+
+    private void authorLabel() {
+        if (computerSet.getAuthor() != null)
+            author.setText(computerSet.getAuthor());
+    }
+
+    private void dateLabel() {
+        if (computerSet.getCreateDate() != null)
+            createDate.setText(computerSet.getCreateDate());
+    }
+
+    private void cpuLabel() {
+        if (computerSet.getCpu() != null)
+            cpu.setText(computerSet.getCpu().getProducent() + ", " + computerSet.getCpu().getModel());
+    }
+
+    private void motherboardLabel() {
+        if (computerSet.getMotherboard() != null)
+            motherboard.setText(computerSet.getMotherboard().getProducent() + ", " + computerSet.getMotherboard().getModel());
+    }
+
+    private void diskLabel() {
+        if (computerSet.getDisk() != null)
+            disk.setText(computerSet.getDisk().getProducent() + ", " + computerSet.getDisk().getModel());
+    }
+
+    private void gpuLabel() {
+        if (computerSet.getGraphicsCard() != null)
+            gpu.setText(computerSet.getGraphicsCard().getProducent() + ", " + computerSet.getGraphicsCard().getModel());
+    }
+
+    private void ramLabel() {
+        if (computerSet.getRam() != null)
+            ram.setText(computerSet.getRam().getProducent() + ", " + computerSet.getRam().getModel());
+    }
+
+    private void supplyLabel() {
+        if (computerSet.getPowerSupply() != null)
+            supply.setText(computerSet.getPowerSupply().getProducent() + ", " + computerSet.getPowerSupply().getModel());
+    }
+
+    private void caseLabel() {
+        if (computerSet.getComputerCase() != null)
+            computercase.setText(computerSet.getComputerCase().getProducent() + ", " + computerSet.getComputerCase().getModel());
     }
 
     @FXML

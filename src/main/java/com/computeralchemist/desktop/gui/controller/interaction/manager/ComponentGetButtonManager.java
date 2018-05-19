@@ -1,6 +1,7 @@
 package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
 import com.computeralchemist.desktop.dto.components.ComputerComponent;
+import com.computeralchemist.desktop.gui.alerts.NoComponentAlert;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
 import com.computeralchemist.desktop.logic.command.ComponentRequestsCommand;
 import com.computeralchemist.desktop.logic.command.RequestCommand;
@@ -50,7 +51,11 @@ public class ComponentGetButtonManager extends PaneManager implements Initializa
 
     @FXML
     public void executeRequest(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
-        request();
+        try {
+            request();
+        } catch (RuntimeException e) {
+            new NoComponentAlert().noComponent(componentType, productId);
+        }
 
         new ComponentGetPresenter().presentResult(presenter, computerComponent);
     }

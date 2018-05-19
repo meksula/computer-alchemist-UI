@@ -13,7 +13,7 @@ import java.util.List;
  * 18-05-2018
  * */
 
-public class RamLabelBinder implements LabelBinder {
+public class RamLabelBinder extends LabelBinder {
     private Ram ram;
     private RamParameters parameters;
     private List<Label> labelList;

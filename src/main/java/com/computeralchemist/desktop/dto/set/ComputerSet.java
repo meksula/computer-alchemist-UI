@@ -8,6 +8,7 @@ import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
 import com.computeralchemist.desktop.dto.components.ram.Ram;
 import com.computeralchemist.desktop.dto.components.supply.PowerSupply;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,6 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public abstract class ComputerSet {
 
     public abstract long getSetId();

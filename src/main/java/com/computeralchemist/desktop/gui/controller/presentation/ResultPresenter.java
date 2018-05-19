@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.layout.Pane;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * @Author
@@ -20,6 +21,8 @@ public abstract class ResultPresenter {
     protected String fxmlPath;
     protected static ComputerComponent computerComponent;
     protected static ComputerSet computerSet;
+    protected static List<ComputerComponent> componentList;
+    protected static List<ComputerSet> setList;
 
     public final void presentResult(Parent parent, ComputerComponent computerComponent) {
         ResultPresenter.presenter = (Pane) parent;
@@ -34,6 +37,14 @@ public abstract class ResultPresenter {
         ResultPresenter.presenter = (Pane) parent;
         this.fxmlName = computerSet.getType().toString();
         ResultPresenter.computerSet = computerSet;
+
+        fxmlPath = setFxmlPath();
+        loadPresenter();
+    }
+
+    public void presentResult(Parent parent, List<?> list) {
+        ResultPresenter.presenter = (Pane) parent;
+        ResultPresenter.componentList = (List<ComputerComponent>) list;
 
         fxmlPath = setFxmlPath();
         loadPresenter();
@@ -58,7 +69,8 @@ public abstract class ResultPresenter {
             System.out.println("Cannot load FXML template.");
         }
 
-        presenter.getChildren().add(pane);
+        if (presenter != null && pane != null)
+            presenter.getChildren().add(pane);
     }
 
 }

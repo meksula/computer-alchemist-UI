@@ -1,8 +1,7 @@
 package com.computeralchemist.desktop.gui.controller.presentation;
 
 import com.computeralchemist.desktop.dto.components.ComputerComponent;
-import com.computeralchemist.desktop.dto.components.cpu.Cpu;
-import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
+import com.computeralchemist.desktop.gui.controller.interaction.manager.ComponentGetButtonManager;
 import com.computeralchemist.desktop.gui.controller.presentation.nodes.LabelFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,9 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -23,13 +20,6 @@ import java.util.concurrent.atomic.AtomicInteger;
  * */
 
 public class ComponentListPresenter extends ResultPresenter implements Initializable {
-
-    /*
-    * TODO init this, after logic impl
-    * Listę jakie komponenty załadować masz w zmiennej "super.fxmlName"
-    * */
-
-    private static List<ComputerComponent> componentList = new ArrayList<>(Arrays.asList(new Cpu(), new Motherboard()));
 
     @FXML
     private VBox vbox;
@@ -44,7 +34,12 @@ public class ComponentListPresenter extends ResultPresenter implements Initializ
         LabelFactory labelFactory = new LabelFactory() {
             @Override
             protected void presentIndicatedComponent(String model) {
-                //TODO
+                ComputerComponent computerComponent = componentList.stream().filter(component -> component.getModel().equals(model))
+                        .findFirst()
+                        .get();
+
+                presenter.getChildren().clear();
+                new ComponentGetPresenter().presentResult(presenter, computerComponent);
             }
         };
 

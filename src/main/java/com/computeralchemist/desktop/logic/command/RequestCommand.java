@@ -13,9 +13,7 @@ public abstract class RequestCommand<T> {
 
     public T executeGetRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
         String uri = createUri(uriParts);
-        System.out.println("Connect to: " + uri);
         String jsonResult = executeGetUri(uri);
-        System.out.println("Result: " + jsonResult);
 
         return mapToObject(jsonResult);
     }

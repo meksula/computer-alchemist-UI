@@ -2,9 +2,15 @@ package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
 import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentListPresenter;
+import com.computeralchemist.desktop.logic.command.ComponentListRequestCommand;
+import com.computeralchemist.desktop.logic.command.RequestCommand;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Author
@@ -14,8 +20,9 @@ import javafx.scene.control.MenuItem;
 
 public class ComponentListButtonManager extends PaneManager {
     private final String REQUIRED_FXML = "parts/listComponentGet";
+    private RequestCommand<List<ComputerComponent>> command;
     private String componentType;
-    private ComputerComponent computerComponent;
+    private List<ComputerComponent> componentList;
 
     @Override
     protected String fxmlName() {
@@ -28,8 +35,11 @@ public class ComponentListButtonManager extends PaneManager {
     }
 
     @FXML
-    public void executeRequest(ActionEvent actionEvent) {
-        new ComponentListPresenter().presentResult(presenter, computerComponent);
+    public void executeRequest(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
+        command = new ComponentListRequestCommand();
+        componentList = command.executeGetRequest(Arrays.asList("components", componentType));
+
+        new ComponentListPresenter().presentResult(presenter, componentList);
     }
 
 }

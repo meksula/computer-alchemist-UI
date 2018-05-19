@@ -14,9 +14,9 @@
         <Button fx:id="executeButton" layoutX="94.0" layoutY="352.0" mnemonicParsing="false" onAction="#executeRequest" text="Execute request" />
         <MenuButton fx:id="componentMenu" layoutX="14.0" layoutY="79.0" mnemonicParsing="false" text="Components">
             <items>
-                <MenuItem fx:id="gamingSet" mnemonicParsing="false" onAction="#setComponentType" text="Gaming computer set" />
-                <MenuItem fx:id="familySet" mnemonicParsing="false" onAction="#setComponentType" text="Family computer set" />
-                <MenuItem fx:id="workSet" mnemonicParsing="false" onAction="#setComponentType" text="Work computer set" />
+                <MenuItem fx:id="gaming" mnemonicParsing="false" onAction="#setComponentType" text="Gaming computer set" />
+                <MenuItem fx:id="family" mnemonicParsing="false" onAction="#setComponentType" text="Family computer set" />
+                <MenuItem fx:id="work" mnemonicParsing="false" onAction="#setComponentType" text="Work computer set" />
             </items>
         </MenuButton>
     </children>

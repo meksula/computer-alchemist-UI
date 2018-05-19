@@ -23,4 +23,6 @@ public abstract class ComputerComponent {
     private long allPoints;
     private long votes;
     private double ratesEvg;
+
+    public abstract long getProductId();
 }

@@ -8,6 +8,10 @@ import com.computeralchemist.desktop.dto.components.gpu.GraphicsCard;
 import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
 import com.computeralchemist.desktop.dto.components.ram.Ram;
 import com.computeralchemist.desktop.dto.components.supply.PowerSupply;
+import com.computeralchemist.desktop.dto.set.ComputerSet;
+import com.computeralchemist.desktop.dto.set.FamilyComputerSet;
+import com.computeralchemist.desktop.dto.set.GamingComputerSet;
+import com.computeralchemist.desktop.dto.set.WorkComputerSet;
 import com.computeralchemist.desktop.exception.CannotReadTypeException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -67,5 +71,26 @@ public class ObjectMapperSimpleFactory {
         throw new CannotReadTypeException(type);
     }
 
+    public ComputerSet mapToComputerSet(String json, String type) throws IOException {
+        if (type.equals("work"))
+            return objectMapper.readValue(json, WorkComputerSet.class);
+        else if (type.equals("gaming"))
+            return objectMapper.readValue(json, GamingComputerSet.class);
+        else if (type.equals("family"))
+            return objectMapper.readValue(json, FamilyComputerSet.class);
+
+        throw new CannotReadTypeException(type);
+    }
+
+    public List<ComputerSet> mapToSetList(String json, String type) throws IOException {
+        if (type.equals("work"))
+            return objectMapper.readValue(json, new TypeReference<List<WorkComputerSet>>(){});
+        else if (type.equals("gaming"))
+            return objectMapper.readValue(json, new TypeReference<List<GamingComputerSet>>(){});
+        else if (type.equals("family"))
+            return objectMapper.readValue(json, new TypeReference<List<FamilyComputerSet>>(){});
+
+        throw new CannotReadTypeException(type);
+    }
 
 }
