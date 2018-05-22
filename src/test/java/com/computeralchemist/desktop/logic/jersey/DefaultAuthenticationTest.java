@@ -33,19 +33,19 @@ public class DefaultAuthenticationTest {
 
     @Test
     public void authenticationShouldNotPassTest() {
-        String result = authenticationApi.login(INVALID_USERNAME, INVALID_PASSWORD);
+        int result = authenticationApi.login(INVALID_USERNAME, INVALID_PASSWORD);
         assertEquals(EXPECTED_UNAUTHORIZED, result);
     }
 
     @Test
     public void authenticationShouldPassTest() {
-        String result = authenticationApi.login(VALID_USERNAME, VALID_PASSWORD);
+        int result = authenticationApi.login(VALID_USERNAME, VALID_PASSWORD);
         assertEquals(EXPECTED_AUTHENTICATED, result);
     }
 
     @Test
     public void tryLoginWithoutCredencials() {
-        String result = authenticationApi.login("", "");
+        int result = authenticationApi.login("", "");
         assertEquals(EXPECTED_UNAUTHORIZED, result);
     }
 

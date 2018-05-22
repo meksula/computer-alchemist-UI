@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane prefHeight="432.0" prefWidth="759.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.consoleUI.gui.ui.PostComponentUI">
+<Pane prefHeight="432.0" prefWidth="759.0" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.desktop.gui.controller.interaction.manager.ComponentPostButtonManager">
     <children>
-        <Label layoutX="85.0" layoutY="6.0" styleClass="txt" text="Computer case POST component" />
+        <Label layoutX="85.0" layoutY="6.0" styleClass="txt" text="Disk POST component" />
         <Button fx:id="executeButton" layoutX="79.0" layoutY="392.0" mnemonicParsing="false" onAction="#executeRequest" text="Execute POST request" />
         <HBox layoutX="14.0" layoutY="30.0" prefHeight="352.0" prefWidth="343.0">
             <children>

@@ -1,6 +1,5 @@
 package com.computeralchemist.desktop.gui.controller.presentation;
 
-import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.dto.set.ComputerSet;
 import com.computeralchemist.desktop.gui.controller.presentation.nodes.LabelFactory;
 import javafx.fxml.FXML;
@@ -11,7 +10,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicInteger;
