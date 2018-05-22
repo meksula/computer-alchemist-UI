@@ -22,7 +22,7 @@ public class DefaultAuthentication implements AuthenticationApi {
     private static DefaultAuthentication defaultAuthentication = new DefaultAuthentication();
     private ClientConfig clientConfig;
 
-    private DefaultAuthentication() {}
+    protected DefaultAuthentication() {}
 
     public static DefaultAuthentication getInstance() {
         return DefaultAuthentication.defaultAuthentication;

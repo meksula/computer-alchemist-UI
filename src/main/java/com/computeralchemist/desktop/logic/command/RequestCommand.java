@@ -18,11 +18,9 @@ public abstract class RequestCommand<T> {
         return mapToObject(jsonResult);
     }
 
-    public T executePostRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
+    public String executePostRequest(List<String> uriParts) {
         String uri = createUri(uriParts);
-        String jsonResult = executePostUri(uri);
-
-        return mapToObject(jsonResult);
+        return executePostUri(uri);
     }
 
     public T executePutRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
