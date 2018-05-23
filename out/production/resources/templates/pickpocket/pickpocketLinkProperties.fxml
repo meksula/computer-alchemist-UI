@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
@@ -9,6 +11,18 @@
    <children>
       <Label layoutX="100.0" layoutY="97.0" styleClass="txt" text="Here past link to component in online store:" />
       <TextField fx:id="linkField" layoutX="100.0" layoutY="133.0" prefHeight="26.0" prefWidth="534.0" />
-      <Button layoutX="306.0" layoutY="190.0" mnemonicParsing="false" onAction="#executeRequest" text="Do it!" />
+      <Button layoutX="424.0" layoutY="190.0" mnemonicParsing="false" onAction="#executeRequest" text="Do it!" />
+      <MenuButton fx:id="componentMenu" layoutX="100.0" layoutY="190.0" mnemonicParsing="false" text="Components">
+         <items>
+            <MenuItem fx:id="cpu" mnemonicParsing="false" onAction="#setComponentType" text="cpu" />
+            <MenuItem fx:id="motherboard" mnemonicParsing="false" onAction="#setComponentType" text="motherboard" />
+            <MenuItem fx:id="disk" mnemonicParsing="false" onAction="#setComponentType" text="disk" />
+            <MenuItem fx:id="ram" mnemonicParsing="false" onAction="#setComponentType" text="ram" />
+            <MenuItem fx:id="supply" mnemonicParsing="false" onAction="#setComponentType" text="power supply" />
+            <MenuItem fx:id="computercase" mnemonicParsing="false" onAction="#setComponentType" text="computer case" />
+            <MenuItem fx:id="gpu" mnemonicParsing="false" onAction="#setComponentType" text="graphics card" />
+         </items>
+      </MenuButton>
+      <Label fx:id="choosen" layoutX="243.0" layoutY="195.0" styleClass="txt" />
    </children>
 </Pane>

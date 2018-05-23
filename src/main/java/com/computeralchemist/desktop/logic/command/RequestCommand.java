@@ -23,6 +23,13 @@ public abstract class RequestCommand<T> {
         return executePostUri(uri);
     }
 
+    public T executePostPickpocketRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
+        String uri = createUri(uriParts);
+        String jsonResult = executePostUri(uri);
+
+        return mapToObject(jsonResult);
+    }
+
     public T executePutRequest(List<String> uriParts) throws IOException, ClassNotFoundException {
         String uri = createUri(uriParts);
         String jsonResult = executePutUri(uri);

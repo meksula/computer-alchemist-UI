@@ -4,10 +4,8 @@ import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.dto.components.motherboard.Motherboard;
 import com.computeralchemist.desktop.dto.components.motherboard.MotherboardParameters;
 import javafx.scene.control.Label;
-import javafx.scene.control.Tooltip;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author
@@ -47,6 +45,23 @@ public class MotherboardLabelBinder extends LabelBinder {
 
         addActionAndTooltip(labelList.get(11), parameters.getProcesorAvailables());
         addActionAndTooltip(labelList.get(12), parameters.getOtherSockets());
+    }
+
+    @Override
+    public ComputerComponent updateValues() {
+        motherboard.setProducent(labelList.get(0).getText());
+        motherboard.setModel(labelList.get(1).getText());
+        motherboard.setVotes(Long.parseLong(labelList.get(2).getText()));
+        motherboard.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setType(labelList.get(4).getText());
+        parameters.setChipset(labelList.get(5).getText());
+        parameters.setSocket(labelList.get(6).getText());
+        parameters.setRamSockets(Integer.parseInt(labelList.get(7).getText()));
+        parameters.setBios(labelList.get(8).getText());
+        parameters.setMemoryType(labelList.get(9).getText());
+        parameters.setMemoryFrequency(Double.parseDouble(labelList.get(10).getText()));
+
+        return motherboard;
     }
 
 }

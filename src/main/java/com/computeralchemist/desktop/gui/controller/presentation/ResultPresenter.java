@@ -17,25 +17,26 @@ import java.util.List;
 
 public abstract class ResultPresenter {
     protected static Pane presenter;
-    protected String fxmlName;
+    protected static String fxmlName;
     protected String fxmlPath;
     protected static ComputerComponent computerComponent;
     protected static ComputerSet computerSet;
     protected static List<ComputerComponent> componentList;
     protected static List<ComputerSet> setList;
+    protected static List<String> properties;
 
     public final void presentResult(Parent parent, ComputerComponent computerComponent) {
         ResultPresenter.presenter = (Pane) parent;
-        this.fxmlName = computerComponent.getComponentType();
         ResultPresenter.computerComponent = computerComponent;
-
+        fxmlName = computerComponent.getComponentType();
         fxmlPath = setFxmlPath();
+
         loadPresenter();
     }
 
     public final void presentResult(Parent parent, ComputerSet computerSet) {
         ResultPresenter.presenter = (Pane) parent;
-        this.fxmlName = computerSet.getType().toString();
+        fxmlName = computerSet.getType().toString();
         ResultPresenter.computerSet = computerSet;
 
         fxmlPath = setFxmlPath();
@@ -45,6 +46,14 @@ public abstract class ResultPresenter {
     public void presentResult(Parent parent, List<?> list) {
         ResultPresenter.presenter = (Pane) parent;
         ResultPresenter.componentList = (List<ComputerComponent>) list;
+
+        fxmlPath = setFxmlPath();
+        loadPresenter();
+    }
+
+    public void presentResultProperties(Parent parent, List<String> list) {
+        ResultPresenter.presenter = (Pane) parent;
+        ResultPresenter.properties = list;
 
         fxmlPath = setFxmlPath();
         loadPresenter();
@@ -66,6 +75,7 @@ public abstract class ResultPresenter {
         try {
             pane = loader.load();
         } catch (IOException e) {
+            e.printStackTrace();
             System.out.println("Cannot load FXML template.");
         }
 

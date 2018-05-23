@@ -46,4 +46,22 @@ public class GpuLabelBinder extends LabelBinder {
         addActionAndTooltip(labelList.get(14), parameters.getConnectors());
     }
 
+    @Override
+    public ComputerComponent updateValues() {
+        graphicsCard.setProducent(labelList.get(0).getText());
+        graphicsCard.setModel(labelList.get(1).getText());
+        graphicsCard.setVotes(Long.parseLong(labelList.get(2).getText()));
+        graphicsCard.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setChipset(labelList.get(5).getText());
+        parameters.setMemory(Integer.parseInt(labelList.get(6).getText()));
+        parameters.setMemoryType(labelList.get(7).getText());
+        parameters.setMemoryFrequency(Double.parseDouble(labelList.get(8).getText()));
+        parameters.setMainConnectorType(labelList.get(9).getText());
+        parameters.setLength(Double.parseDouble(labelList.get(10).getText()));
+        parameters.setClockFrequency(Double.parseDouble(labelList.get(11).getText()));
+        parameters.setResolution(labelList.get(12).getText());
+        parameters.setCooler(labelList.get(13).getText());
+        return graphicsCard;
+    }
+
 }

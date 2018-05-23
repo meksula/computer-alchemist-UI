@@ -3,6 +3,7 @@ package com.computeralchemist.desktop.gui.controller.presentation.particular;
 import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.dto.components.disk.Disk;
 import com.computeralchemist.desktop.dto.components.disk.DiskParameters;
+import com.computeralchemist.desktop.dto.components.disk.DriveType;
 import javafx.scene.control.Label;
 
 import java.util.List;
@@ -38,4 +39,28 @@ public class DiskLabelBinder extends LabelBinder {
         labelList.get(7).setText(String.valueOf(parameters.getReadSpeed()));
         labelList.get(8).setText(String.valueOf(parameters.getWriteSpeed()));
     }
+
+    @Override
+    public ComputerComponent updateValues() {
+        disk.setProducent(labelList.get(0).getText());
+        disk.setModel(labelList.get(1).getText());
+        disk.setVotes(Long.parseLong(labelList.get(2).getText()));
+        disk.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setType(DriveType.valueOf(labelList.get(4).getText()));
+        parameters.setFormat(labelList.get(5).getText());
+        parameters.setCapacity(Integer.parseInt(labelList.get(6).getText()));
+        parameters.setReadSpeed(Double.parseDouble(labelList.get(7).getText()));
+        parameters.setWriteSpeed(Double.parseDouble(labelList.get(8).getText()));
+        return disk;
+    }
+
 }
+
+
+
+
+
+
+
+
+

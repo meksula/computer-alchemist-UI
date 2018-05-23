@@ -3,11 +3,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.text.Font?>
 
 <Pane prefHeight="378.0" prefWidth="560.0" styleClass="welcome" stylesheets="@../../styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.computeralchemist.desktop.gui.controller.presentation.PickpocketPropertiesPresenter">
    <children>
-      <Label layoutX="14.0" layoutY="14.0" styleClass="txt" text="Pickpocket's extracted properties" />
+      <Label layoutX="14.0" layoutY="5.0" styleClass="txt" text="Pickpocket's extracted properties">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
       <VBox fx:id="vbox" layoutX="14.0" layoutY="41.0" prefHeight="322.0" prefWidth="530.0" />
    </children>
 </Pane>

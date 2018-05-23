@@ -2,13 +2,21 @@ package com.computeralchemist.desktop.gui.controller.interaction.manager;
 
 import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.dto.components.cpu.Cpu;
+import com.computeralchemist.desktop.gui.alerts.TypeNotSelectedAlert;
 import com.computeralchemist.desktop.gui.controller.presentation.ComponentGetPresenter;
 import com.computeralchemist.desktop.gui.controller.presentation.PickpocketPropertiesPresenter;
+import com.computeralchemist.desktop.logic.command.PickpocketPropertiesRequestsCommand;
+import com.computeralchemist.desktop.logic.jersey.pickpocket.PickpocketLink;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.computeralchemist.desktop.gui.controller.interaction.manager.PickpocketComponentButtonManager.createHintLabel;
@@ -21,11 +29,16 @@ import static com.computeralchemist.desktop.gui.controller.interaction.manager.P
 
 public class PickpocketPropertiesButtonManager extends PaneManager {
     private String fxmlPath = "pickpocket/pickpocketLinkProperties";
-    private String hint = "In the left side of screen you\nsee extracted values from url." +
+    private String hint = "In the right side of screen\nyou see extracted values from url." +
             "\nIf you want to build Component,\n" +
             "click link bellow: (The process may be unsuccessful)";
-    private List<String> properties; //TODO lista będzie inicjalizowana po pobraniu wartości.
+
+    private List<String> properties;
     private ComputerComponent builded;
+    private String componentType;
+
+    @FXML
+    private Label choosen;
 
     @FXML
     private TextField linkField;
@@ -35,14 +48,24 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
         return fxmlPath;
     }
 
-    public void executeRequest(ActionEvent actionEvent) {
-        cleanControllPane();
+    public void executeRequest(ActionEvent actionEvent) throws IOException {
+        if (componentType == null || componentType.isEmpty()) {
+            new TypeNotSelectedAlert().popupAlert();
+            return;
+        }
 
+        drawNodes();
+
+        this.properties = new PickpocketPropertiesRequestsCommand(new PickpocketLink(linkField.getText()))
+                .executeRequest(Arrays.asList("pickpocket", componentType, "properties"));
+
+        new PickpocketPropertiesPresenter().presentResultProperties(presenter, properties);
+    }
+
+    private void drawNodes() {
+        cleanControllPane();
         controllPane.getChildren().add(createHintLabel(hint));
         controllPane.getChildren().add(createEditButton("Build component"));
-
-        PickpocketPropertiesPresenter propertiesPresenter = new PickpocketPropertiesPresenter(properties);
-        propertiesPresenter.presentResult(presenter, new Cpu());
     }
 
     private Button createEditButton(String text) {
@@ -65,5 +88,11 @@ public class PickpocketPropertiesButtonManager extends PaneManager {
         //TODO ta metoda zaprezentuje zbudowany komponent
         //PS: wszystko działa poprawnie ;)
         new ComponentGetPresenter().presentResult(presenter, builded);
+    }
+
+    @FXML
+    public void setComponentType(ActionEvent actionEvent) {
+        this.componentType = ((MenuItem)actionEvent.getSource()).getId();
+        this.choosen.setText(componentType);
     }
 }

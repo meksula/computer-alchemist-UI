@@ -41,4 +41,27 @@ public class CaseLabelBinder extends LabelBinder {
         addActionAndTooltip(labelList.get(9), parameters.getConnectors());
     }
 
+    @Override
+    public ComputerComponent updateValues() {
+        computerCase.setProducent(labelList.get(0).getText());
+        computerCase.setModel(labelList.get(1).getText());
+        computerCase.setVotes(Long.parseLong(labelList.get(2).getText()));
+        computerCase.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setType(labelList.get(4).getText());
+        parameters.setHeight(Double.parseDouble(labelList.get(5).getText()));
+        parameters.setWidth(Double.parseDouble(labelList.get(6).getText()));
+        parameters.setWeight(Double.parseDouble(labelList.get(7).getText()));
+
+        return computerCase;
+    }
+
 }
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 
 public class PostApiConnector implements PostApi {
     private String uri;
-    private ComputerComponent computerComponent;
+    private Object object;
     private ClientConfig clientConfig;
 
     public PostApiConnector() {
@@ -27,7 +27,7 @@ public class PostApiConnector implements PostApi {
     @Override
     public String postComponent(String uri, ComputerComponent computerComponent) {
         this.uri = uri;
-        this.computerComponent = computerComponent;
+        this.object = computerComponent;
 
         return String.valueOf(execute());
     }
@@ -45,7 +45,7 @@ public class PostApiConnector implements PostApi {
     private String parseObjectToString() {
         String json = "";
         try {
-            json = new ObjectMapper().writeValueAsString(computerComponent);
+            json = new ObjectMapper().writeValueAsString(object);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }

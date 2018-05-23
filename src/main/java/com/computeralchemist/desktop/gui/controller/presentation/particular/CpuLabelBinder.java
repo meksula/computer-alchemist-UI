@@ -41,4 +41,20 @@ public class CpuLabelBinder extends LabelBinder {
         labelList.get(10).setText(String.valueOf(parameters.getFrequency()));
     }
 
+    @Override
+    public ComputerComponent updateValues() {
+        cpu.setProducent(labelList.get(0).getText());
+        cpu.setModel(labelList.get(1).getText());
+        cpu.setVotes(Long.parseLong(labelList.get(2).getText()));
+        cpu.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setCores(Integer.parseInt(labelList.get(4).getText()));
+        parameters.setSeries(labelList.get(5).getText());
+        parameters.setSocket(labelList.get(6).getText());
+        parameters.setThreads(Integer.parseInt(labelList.get(7).getText()));
+        parameters.setBitArchitecture(labelList.get(8).getText());
+        parameters.setCache(Integer.parseInt(labelList.get(9).getText()));
+        parameters.setFrequency(Double.parseDouble(labelList.get(10).getText()));
+        return cpu;
+    }
+
 }

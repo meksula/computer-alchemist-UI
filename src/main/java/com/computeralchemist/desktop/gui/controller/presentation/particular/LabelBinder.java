@@ -33,4 +33,5 @@ public abstract class LabelBinder {
         });
     }
 
+    public abstract ComputerComponent updateValues();
 }

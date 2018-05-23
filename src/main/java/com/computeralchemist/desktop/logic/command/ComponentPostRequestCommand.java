@@ -4,7 +4,6 @@ import com.computeralchemist.desktop.dto.components.ComputerComponent;
 import com.computeralchemist.desktop.logic.jersey.PostApiConnector;
 import com.computeralchemist.desktop.logic.uri.DefaultUriBuilder;
 
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -21,7 +20,7 @@ public class ComponentPostRequestCommand extends RequestCommand<ComputerComponen
     }
 
     @Override
-    protected ComputerComponent mapToObject(String jsonResult) throws IOException, ClassNotFoundException {
+    protected ComputerComponent mapToObject(String jsonResult) {
         return null;
     }
 

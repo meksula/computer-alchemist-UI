@@ -41,4 +41,19 @@ public class SupplyLabelBinder extends LabelBinder {
         addActionAndTooltip(labelList.get(9), parameters.getConnectors());
     }
 
+    @Override
+    public ComputerComponent updateValues() {
+        powerSupply.setProducent(labelList.get(0).getText());
+        powerSupply.setModel(labelList.get(1).getText());
+        powerSupply.setVotes(Long.parseLong(labelList.get(2).getText()));
+        powerSupply.setRatesEvg(Double.parseDouble(labelList.get(3).getText()));
+        parameters.setStandard(labelList.get(4).getText());
+        parameters.setPower(Integer.parseInt(labelList.get(5).getText()));
+        parameters.setPfc(labelList.get(6).getText());
+        parameters.setCooler(labelList.get(7).getText());
+        parameters.setModularCable(Boolean.parseBoolean(labelList.get(8).getText()));
+
+        return powerSupply;
+    }
+
 }

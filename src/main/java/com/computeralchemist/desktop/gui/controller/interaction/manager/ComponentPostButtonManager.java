@@ -13,7 +13,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -27,7 +26,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class ComponentPostButtonManager extends PaneManager implements Initializable {
     private String requiredFxml = "post/postComponent";
-    private static String componentType;
+    public static String componentType;
     private ComputerComponent computerComponent;
     private List<TextField> fields;
 
@@ -66,7 +65,7 @@ public class ComponentPostButtonManager extends PaneManager implements Initializ
         setConcreteComponent();
     }
 
-    private void setConcreteComponent() {
+    public void setConcreteComponent() {
         requiredFxml = "post/" + componentType;
         loadFXML();
     }
@@ -80,6 +79,7 @@ public class ComponentPostButtonManager extends PaneManager implements Initializ
 
         try {
             computerComponent = ComponentFactory.valueOf(componentType).buildComponent(properties);
+            ComponentFactory.modular = modular.isSelected();
         } catch (FormNotCompleteException | NullPointerException fnce) {
             new FormNotCompletedAlert().popupAlert(fnce.getMessage());
             return;
@@ -89,7 +89,6 @@ public class ComponentPostButtonManager extends PaneManager implements Initializ
         }
 
         String status = new ComponentPostRequestCommand(computerComponent).executePostRequest(Arrays.asList("components"));
-
         new PostedComponentAlert().popupAlert(status);
     }
 
@@ -106,7 +105,6 @@ public class ComponentPostButtonManager extends PaneManager implements Initializ
             }
             counter.incrementAndGet();
         });
-
 
         return properties;
     }
