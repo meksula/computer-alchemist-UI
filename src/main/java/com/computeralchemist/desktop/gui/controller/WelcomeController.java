@@ -1,17 +1,15 @@
 package com.computeralchemist.desktop.gui.controller;
 
 import com.computeralchemist.desktop.gui.alerts.LoginAlerts;
-import com.computeralchemist.desktop.logic.jersey.AuthenticationApi;
 import com.computeralchemist.desktop.logic.jersey.DefaultAuthentication;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -43,13 +41,15 @@ public class WelcomeController implements Initializable {
     }
 
     @FXML
-    public void goRegisterScreen(MouseEvent event) {
-        //TODO after spring security implementation, add this
+    public void goRegisterScreen(MouseEvent event) throws IOException {
+        final String resourcePath = "/templates/registration.fxml";
+        loadStage(event, resourcePath);
     }
 
     @FXML
     public void login(ActionEvent event) throws IOException {
         boolean access = false;
+        final String resourcePath = "/templates/platform.fxml";
 
         try {
             access = tryLogin();
@@ -58,16 +58,20 @@ public class WelcomeController implements Initializable {
         }
 
         if (access) {
-            Parent parent = FXMLLoader.load(this.getClass().getResource("/templates/platform.fxml"));
-            Scene scene = new Scene(parent);
-            Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
+            loadStage(event, resourcePath);
         }
 
         else if (httpStatus == 401)
             new LoginAlerts().accessDenied();
 
+    }
+
+    private void loadStage(Event event, String resourcePath) throws IOException {
+        Parent parent = FXMLLoader.load(this.getClass().getResource(resourcePath));
+        Scene scene = new Scene(parent);
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     private boolean tryLogin() {

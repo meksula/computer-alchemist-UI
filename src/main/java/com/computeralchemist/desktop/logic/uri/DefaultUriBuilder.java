@@ -9,7 +9,7 @@ import java.util.List;
  * */
 
 public class DefaultUriBuilder implements UriBuilder {
-    private final String DEFAULT_ELEMENT = "http://localhost:8080/";
+    private final String DEFAULT_ELEMENT = "http://51.38.129.50:8080/";
 
     @Override
     public String buildUri(List<String> uriParts) {

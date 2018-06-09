@@ -50,7 +50,7 @@ public class DefaultAuthentication implements AuthenticationApi {
         clientConfig = buildConfiguration(username, password);
 
         Client client = ClientBuilder.newClient(clientConfig);
-        WebTarget webTarget = client.target("http://localhost:8080/components/cpu/2");
+        WebTarget webTarget = client.target("http://51.38.129.50:8080/login");
 
         Invocation.Builder invocationBuilder =  webTarget.request(MediaType.APPLICATION_JSON);
 
